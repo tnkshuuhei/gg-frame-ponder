@@ -27,7 +27,7 @@ export default createConfig({
       },
       abi: StrategyABI,
       address: "0xE03a19f4921D69cddD37f54dFe814DC66AA92100",
-      startBlock: 202718849,
+      startBlock: 159700000,
     },
   },
 });
