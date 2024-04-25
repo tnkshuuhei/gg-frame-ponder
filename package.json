@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@ponder/core": "^0.4.10",
+    "ethers": "^6.12.0",
     "viem": "^1.19.9"
   },
   "devDependencies": {
