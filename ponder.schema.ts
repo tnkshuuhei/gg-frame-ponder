@@ -6,5 +6,6 @@ export default createSchema((p) => ({
     recipientId: p.hex(),
     data: p.hex(),
     sender: p.hex(),
+    timestamp: p.bigint(),
   }),
 }));

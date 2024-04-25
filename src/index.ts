@@ -9,6 +9,7 @@ ponder.on("AlloStrategy:Registered", async ({ event, context }) => {
       recipientId: event.args.recipientId,
       data: event.args.data,
       sender: event.args.sender,
+      timestamp: event.block.timestamp,
     },
   });
 });
