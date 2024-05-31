@@ -6,7 +6,7 @@ export default createSchema((p) => ({
     pool: p.hex(),
     recipientId: p.hex(),
     recipientAddress: p.hex(),
-    recipientCount: p.bigint(),
+    recipientCount: p.string(),
     metadata: p.string(),
     sender: p.hex(),
     timestamp: p.bigint(),

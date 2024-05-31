@@ -10,6 +10,7 @@ ponder.on("AlloStrategy:Registered", async ({ event, context }) => {
     ["address", "address", "tuple(uint256, string)"],
     extendedData[0]
   );
+  const stringfiedCount = extendedData[1].toString();
 
   await RegisteredEvent.create({
     id: event.log.id,
@@ -17,7 +18,7 @@ ponder.on("AlloStrategy:Registered", async ({ event, context }) => {
       pool: event.log.address,
       recipientId: event.args.recipientId,
       recipientAddress: decodedData[1],
-      recipientCount: extendedData[1],
+      recipientCount: stringfiedCount,
       metadata: decodedData[2][1],
       sender: event.args.sender,
       timestamp: event.block.timestamp,
