@@ -10,9 +10,11 @@ ponder.on("AlloStrategy:Registered", async ({ event, context }) => {
     ["address", "address", "tuple(uint256, string)"],
     extendedData[0]
   );
+
   await RegisteredEvent.create({
     id: event.log.id,
     data: {
+      pool: event.log.address,
       recipientId: event.args.recipientId,
       recipientAddress: decodedData[1],
       recipientCount: extendedData[1],

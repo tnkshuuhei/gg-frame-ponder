@@ -26,7 +26,10 @@ export default createConfig({
         event: "Registered",
       },
       abi: StrategyABI,
-      address: "0xE03a19f4921D69cddD37f54dFe814DC66AA92100",
+      address: [
+        "0xE03a19f4921D69cddD37f54dFe814DC66AA92100",
+        "0xDA3B55A9bCf58Bb2d9F673836Beab3aE47cA9184",
+      ],
       startBlock: 159700000,
     },
   },
